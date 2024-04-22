@@ -1,0 +1,48 @@
+Assigment2
+
+Design Document: Modular Functions for Factorial and Fibonacci
+
+Function 1: Factorial CalculationDescription: This function calculates the factorial of a given number using a recursive approach.Pseudocode:
+
+Function factorial(n):
+    if n equals 0:
+        return 1
+    else:
+        return n * factorial(n - 1)
+Explanation:
+This function takes an integer n as input and recursively calculates the factorial.
+If n is 0, the factorial is defined as 1.
+Otherwise, it multiplies n by the factorial of n-1 until n becomes 0.
+Function 2: Fibonacci Number CalculationDescription: This function calculates the nth Fibonacci number using an iterative approach.Pseudocode:
+
+
+Function fibonacci(n):
+    if n equals 0:
+        return 0
+    else if n equals 1:
+        return 1
+    else:
+        initialize variables a = 0, b = 1, and result = 0
+        repeat n - 1 times:
+            result = a + b
+            a = b
+            b = result
+        return result
+Explanation:
+This function takes an integer n as input and iteratively calculates the nth Fibonacci number.
+If n is 0, the Fibonacci number is 0.
+If n is 1, the Fibonacci number is 1.
+Otherwise, it iterates n-1 times, updating variables a and b to calculate the Fibonacci number.
+
+Modularity in Programming:
+
+1.Modularity in programming refers to the practice of breaking down a program into smaller, independent modules or functions. Here's how modularity helps with code reuse and organization:
+
+2.Code Reuse: By breaking down a program into modular functions, we can reuse these functions in different parts of the program or even in other programs. For example, once we have implemented the factorial and Fibonacci functions, we can use them wherever needed without rewriting the code.
+
+3.Organization: Modularity improves code organization by dividing a complex program into smaller, manageable units. Each module or function focuses on a specific task, making the code easier to understand, maintain, and debug. Additionally, modular design facilitates collaboration among team members, as different developers can work on different modules simultaneously.
+
+4.Scalability: Modular design allows for easier scalability of the codebase. New features can be implemented by adding new modules or extending existing ones, without affecting the entire codebase. This flexibility makes it easier to adapt the program to changing requirements or to integrate it with other systems.
+In summary, modularity enhances code reuse, organization, and scalability, making the development and maintenance of software projects more efficient and manageable.
+
+

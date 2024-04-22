@@ -1,0 +1,18 @@
+Assigment1
+
+1. Start
+
+2. Prompt the user to enter a number
+3. Read the input number and store it in a variable, let's call it 'num'
+
+4. Check if 'num' is even or odd:
+   a. If 'num' mod 2 equals 0 (i.e., 'num' is even):
+      i. Set 'result' to the square of 'num' (i.e., 'num' * 'num')
+   b. Else (i.e., 'num' is odd):
+      i. Set 'result' to the cube of 'num' (i.e., 'num' * 'num' * 'num')
+
+5. Output the result to the user
+
+6. End
+
+

@@ -1,0 +1,53 @@
+Assigment3
+
+1.Recursive Approach:
+   
+     Function fibonacciRecursive(n):
+    if n equals 0:
+        return 0
+    else if n equals 1:
+        return 1
+    else:
+        return fibonacciRecursive(n - 1) + fibonacciRecursive(n - 2)
+
+let's calculate the time complexity using Big O notation. In the worst-case scenario, each call to fibonacciRecursive results in two more recursive calls until we reach the base cases (n equals 0 or 1). This forms a binary tree structure, and the number of nodes in this tree is approximately equal to 2^n. Therefore, the time complexity of the recursive approach is O(2^n).
+
+2.Iterative Approach:
+
+      Function fibonacciIterative(n):
+    if n equals 0:
+        return 0
+    else if n equals 1:
+        return 1
+    else:
+        initialize variables a = 0, b = 1, and result = 0
+        repeat n - 1 times:
+            result = a + b
+            a = b
+            b = result
+        return result
+
+   
+let's analyze the time complexity of the iterative approach. In this approach, we use a loop that iterates n - 1 times, performing constant-time operations in each iteration. Therefore, the time complexity of the iterative approach is O(n).
+
+
+
+Pros and Cons:
+
+Recursive Approach:
+
+Pros:
+Simple and easy to understand implementation.
+
+Cons:
+Exponential time complexity: The recursive approach has exponential time complexity, making it inefficient for large values of n.
+High memory consumption: Each function call consumes additional memory for the function call stack, which can lead to stack overflow errors for large values of n.
+
+Iterative Approach:
+
+Pros:
+Efficient time complexity: The iterative approach has linear time complexity, making it more efficient than the recursive approach, especially for large values of n.
+Low memory consumption: The iterative approach does not rely on function call stack, resulting in lower memory consumption compared to the recursive approach.
+
+Cons:
+More complex implementation: The iterative approach may require more lines of code and can be harder to understand for beginners compared to the recursive approach.
